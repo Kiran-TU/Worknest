@@ -1,0 +1,168 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f9fc;
+  margin: 0;
+  padding: 0;
+  color: #2d3436;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #6c5ce7;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+h3 {
+  color: #6c5ce7;
+  margin-top: 40px;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Task Summary */
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+ul li {
+  background: linear-gradient(135deg, #ff6b81, #ff9ff3);
+  padding: 24px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  font-size: 1.1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+  backdrop-filter: blur(4px);
+}
+
+/* Gradient Variations */
+ul li:nth-child(2) {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+ul li:nth-child(3) {
+  background: linear-gradient(135deg, #1dd1a1, #10ac84);
+}
+
+ul li:nth-child(4) {
+  background: linear-gradient(135deg, #feca57, #ff6b6b);
+}
+
+ul li:nth-child(5) {
+  background: linear-gradient(135deg, #ff9f43, #ff6348);
+}
+
+ul li:nth-child(6) {
+  background: linear-gradient(135deg, #6c5ce7, #341f97);
+}
+
+/* Shimmer Overlay */
+ul li::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.15);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+ul li:hover::after {
+  top: -20%;
+  left: -20%;
+  animation: shimmer 1.2s ease infinite;
+}
+
+/* Glow + Lift Hover Effect */
+ul li:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Focus Style for Accessibility */
+ul li:focus {
+  outline: 3px dashed #fff;
+  outline-offset: 4px;
+}
+
+/* Shimmer Keyframe */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  ul {
+    gap: 18px;
+  }
+
+  ul li {
+    font-size: 1rem;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  ul {
+    grid-template-columns: 1fr;
+  }
+
+  ul li {
+    width: 100%;
+    padding: 18px;
+  }
+}
+body {
+  background: linear-gradient(135deg, #f0f4ff, #fafbfc);
+  background-size: 400% 400%;
+  animation: bgAnimate 10s ease infinite;
+}
+
+@keyframes bgAnimate {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}

@@ -1,0 +1,75 @@
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #5a9e32;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  border-bottom: 2px solid #aedd9f;
+  padding-bottom: 10px;
+}
+
+/* Tables */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9fff3;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  border: 1px solid #cce6b5;
+  text-align: center;
+  font-size: 14px;
+}
+
+table th {
+  background-color: #d4efc2;
+  color: #426f1d;
+}
+
+/* Forms */
+form {
+  display: inline-block;
+  margin: 5px;
+  background-color: #f0fbe0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdowns */
+select {
+  min-width: 140px;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #bcd9a1;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #3a5f1f;
+  outline: none;
+  transition: border 0.3s;
+}
+
+select:focus {
+  border-color: #88c057;
+}
+
+/* Buttons */
+button {
+  font-size: 14px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #88c057;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6da943;
+}
