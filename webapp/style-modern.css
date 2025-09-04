@@ -1,0 +1,119 @@
+:root {
+    --primary: #334155;
+    --accent: #38bdf8;
+    --background: #f3f4f6;
+    --card: #ffffff;
+    --text: #1e293b;
+    --hover: #e0f2fe;
+    --danger: #ef4444;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+header {
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(51,65,85,0.05);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--card);
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(51,65,85,0.07);
+}
+
+.welcome h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.welcome p {
+    font-size: 1.2rem;
+    color: var(--text);
+}
+
+.quick-actions {
+    margin-top: 2.5rem;
+}
+
+.quick-actions h2 {
+    color: var(--accent);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.actions {
+    display: flex;
+    gap: 2rem;
+}
+
+.action-btn {
+    background: var(--accent);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(56,189,248,0.10);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.action-btn:hover {
+    background: var(--hover);
+    color: var(--primary);
+    transform: translateY(-2px) scale(1.03);
+}
+
+footer {
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-radius: 0 0 10px 10px;
+    font-size: 1rem;
+}
